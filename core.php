@@ -18,6 +18,7 @@
  * page display function
  * expects section
  * page_display($section)
+ * @param $section
  * sections: header, pre_content, post_content, footer
  */
 
