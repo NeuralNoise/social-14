@@ -26,7 +26,7 @@ function page_display ($section) {
 
     if ($section == "header") {
 
-        ?>
+?>
         <!DOCTYPE html>
         <html lang="en">
 
@@ -55,13 +55,13 @@ function page_display ($section) {
 
         </head>
 
-        <?php
+<?php
 
     }
 
 if ($section == "pre_content") {
 
-    ?>
+?>
 
 
 <body>
@@ -104,26 +104,26 @@ if ($section == "pre_content") {
     <div class="row">
     <div class="col-lg-12">
 
-    <?php
+<?php
 
 }
 
 if ($section == "post_content") {
 
-    ?>
+?>
 
     </div>
     </div>
 </div>
     <!-- /.container -->
 
-    <?php
+<?php
 
 }
 
     if ($section == "footer") {
 
-        ?>
+?>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
@@ -136,7 +136,7 @@ if ($section == "post_content") {
         </html>
 
 
-        <?php
+<?php
 
     }
 }

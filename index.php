@@ -19,7 +19,7 @@ page_display('pre_content');
 ?>
 
 <!-- content goes here --->
-<h1>The Live Feed - What's Happening?</h1>
+<h1>The Live Feed</h1>
 
 <?php
 
