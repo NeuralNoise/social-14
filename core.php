@@ -10,6 +10,70 @@
  * that make the site go.
  */
 
+/**
+ * SQL connection class
+ */
+
+class SocialSql {
+    
+    function open () {
+
+        if (!include("../../config.php")) {
+
+            echo ("ERROR: Config file not available.");
+            exit("<br  />Fatal Error");
+
+        }
+        else {
+
+            //make database connection link   
+            $link = mysqli_connect($hostname, $db_user, $db_pass, $database);
+
+            //unset tha database vars...
+            unset($hostname, $db_user, $db_pass, $database);
+
+            if (!$link) {
+
+                return false;
+
+            }
+            else {
+
+                return $link;
+
+            }
+
+        }
+
+
+    }
+    function close ($link) {
+
+        if ($link) {
+
+            mysqli_close($link);
+
+        }
+
+        if (!$link) {
+
+            return true;
+
+        }
+        else {
+
+            return false;
+
+        }
+
+    }
+
+}
+
+/*
+ * end sql conection class.
+ */
+
 //the majority of this layout is from start bootstrap and startbootstrap.com
 //it is used under the apache 2.0 license
 //and is copyright startbootstrap.com
@@ -140,6 +204,14 @@ if ($section == "post_content") {
 
     }
 }
+
+
+//set site variable
+
+//create SocialSql object
+
+    $conn = new SocialSql();
+
 
 ?>
 
