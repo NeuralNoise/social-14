@@ -5,6 +5,8 @@
  * This copyright notice must remain in the header section of this file.
  */
 
+include("core.php");
+
 //user class file
 
     class User {

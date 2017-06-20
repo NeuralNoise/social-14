@@ -88,6 +88,9 @@ class SocialSql {
 
 function page_display ($section) {
 
+    //declare globals
+    global $title;
+
     if ($section == "header") {
 
 ?>
@@ -102,7 +105,7 @@ function page_display ($section) {
             <meta name="description" content="">
             <meta name="author" content="">
 
-            <title>Logo Nav - Start Bootstrap Template</title>
+            <title><?php echo("Social - $title"); ?></title>
 
             <!-- Bootstrap Core CSS -->
             <link href="css/bootstrap.min.css" rel="stylesheet">
