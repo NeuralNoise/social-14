@@ -152,10 +152,10 @@ if ($section == "pre_content") {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="./login">Sign In</a>
+                        <a href="./login.php">Sign In</a>
                     </li>
                     <li>
-                        <a href="./join">Register</a>
+                        <a href="./join.php">Register</a>
                     </li>
                 </ul>
             </div>
