@@ -144,7 +144,7 @@ if ($section == "pre_content") {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./">
                     <img src="./img/logo.png" alt="">
                 </a>
             </div>
@@ -152,13 +152,10 @@ if ($section == "pre_content") {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="./">Home</a>
+                        <a href="./login">Sign In</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="./join">Register</a>
                     </li>
                 </ul>
             </div>
